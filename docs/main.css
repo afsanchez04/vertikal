@@ -1,0 +1,80 @@
+
+.main{height: auto;}
+
+.main i{
+	font-size: 3em;
+	color: white;
+}
+
+.ref{
+	position: relative;
+}
+
+.main p{
+	position: absolute;
+	left: 10px;
+	bottom: -10px;
+	color: white;
+}
+
+.bgImg{
+	background: url(library.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.imgLight{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.h-200{
+		height: 200px;
+	}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+
+	.h-200{
+		height: 200px;
+	}
+
+	.main{height: auto;}
+
+	.imgLight{
+		height: unset;
+	}
+
+	.bgImg{
+		height: 100%;
+	}
+
+	
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+	.h-200{
+		height: auto;
+	}
+
+	.main{height: 300px;}
+
+	.imgLight{
+		height: unset;
+	}
+
+	.bgImg{
+		height: 100vh;
+	}
+
+	
+}
